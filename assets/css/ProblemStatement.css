@@ -328,7 +328,7 @@
             }
         
             .problem-statement1 {
-                font-size: 20px; /* Adjust font size for mobile */
+                font-size: 30px; /* Adjust font size for mobile */
                 font-weight: bold;
                 color: #2e2e9e;
                 margin: 0; /* Remove auto margins */
@@ -336,6 +336,7 @@
             }
         
             .problem-statement1 span {
+                font-size: 30px;
                 color: #ff4646;
             }
         
