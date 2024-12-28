@@ -414,7 +414,7 @@
         }
     
         .problem-statement1 {
-            font-size: 25px; /* Reduce font size for smaller screens */
+            font-size: 40px; /* Reduce font size for smaller screens */
             font-weight: bold;
             color: #2e2e9e;
             margin: 0;
@@ -425,7 +425,7 @@
         }
     
         .problem-statement1 span {
-            font-size: 25px; /* Reduce font size for smaller screens */
+            font-size: 40px; /* Reduce font size for smaller screens */
 
             color: #ff4646;
         }
