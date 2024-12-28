@@ -1,0 +1,491 @@
+/* ----------------faq------------- */
+.grid
+{   display: grid;
+    grid-auto-rows: auto; 
+    gap: 20px; /* Space between grid items */
+    max-width: 1200px; /* Maximum width of the grid */
+    margin: 0 auto; /* Center the grid on the page */
+  }
+  
+  /* Card styles */
+  .card {
+    background-color: #ffffff;
+    color: rgb(0, 0, 0);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(250, 250, 250, 0.1);
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    text-align: left;
+    border:2px solid white;
+  }
+  
+  .card-content {
+    display: flex;
+    align-items: center;
+  }
+  
+  .left1 {
+    width: 10%; /* Takes 25% of the card width */
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #ff4646;
+
+  }
+  
+  .separator {
+    width: 10 px; /* Width of the white line */
+    height: 150%; /* Full height of the card */
+    color: rgb(0, 0, 0); /* White line */
+  }
+  
+  .right1 {
+    width: 75%; /* Takes 75% of the card width */
+    padding-left: 20px; /* Space between the line and the text */
+    font-size: 1rem;
+    color: #2e2e9e;            /* Black for PS1 */
+
+
+  }
+  
+  
+  .card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgb(255, 255, 255); /* Gold shadow */
+  }
+  
+  
+  
+
+  .card p {
+    font-size: 14px;
+    color: #d1c1a8; /* Lighter gold color for description */
+  }
+  
+  /* Modal styles */
+  .modal {
+    display: none; /* Hidden by default */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black background */
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+  }
+  
+  .modal-content1 {
+    background-color: #fff;
+    color: #ffffff;
+    padding: 30px;
+    border-radius: 10px;
+    max-width: 500px;
+    width: 80%;
+    box-shadow: 0 4px 10px rgba(255, 255, 255, 0.1);
+    position: relative;
+    text-align: left; /* Aligns content to the left */
+  }
+  
+  .close-btn {
+    background-color: transparent; /* Transparent background for close button */
+    color: #4b3f72; /* Purple color for the close button */
+    border: none;
+    font-size: 20px;
+    cursor: pointer;
+    position: absolute;
+    top: 10px; /* Positions the button at the top-right corner */
+    right: 10px;
+  }
+  
+  .close-btn:hover {
+    color: #3e2c58; /* Darker purple when hovered */
+  }
+  
+
+  
+  /* Mobile responsive styles */
+  @media (max-width: 768px) {
+    .grid {
+      grid-template-columns: 1fr 1fr;
+      gap: 15px;
+    }
+  
+    .card {
+      padding: 15px;
+    }
+  
+    .modal-content {
+      width: 90%;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .grid {
+      grid-template-columns: 1fr;
+    }
+  
+    .card h2 {
+      font-size: 18px;
+    }
+  
+    .card p {
+      font-size: 12px;
+    }
+  }
+  
+
+
+
+  /* ------------ps--------------- */
+
+  @import "https://fonts.googleapis.com/css2?family=Oswald:wght@500;600;700&amp;family=Roboto:wght@400;500;700&amp;family=Ubuntu:wght@500;700&amp;display=swap";
+        .container1 {
+            position: relative;
+            border: 1p solid black;
+            width: 75%;
+            margin-left: auto;
+            margin-right: auto;
+            font-family: oswald, sans-serif;
+            align-items: center;
+        }
+
+        
+
+        .card1 {
+            background-color: #ffffff;
+            border-radius: 15px;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+            width: 570px;
+            height: 170px;
+            padding: 20px;
+            cursor: pointer;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 30px;
+        }
+
+        .problem-statement1 {
+            font-size: 50px;
+            font-weight: bold;
+            color: #2e2e9e;
+            margin-left: auto;
+            margin-right: auto;
+            /* Ensures the text stays on one line */
+        }
+
+        .problem-statement1 span {
+            color: #ff4646;
+
+        }
+
+        .toggle-icon {
+            font-size: 45px;
+            font-weight:900;
+            color: #ff4646;
+            margin-right: 0px;
+        }
+
+
+        .card-container1 {
+            display: none;
+        }
+
+/* Add this CSS */
+@keyframes fadeInScaleUp {
+    0% {
+        opacity: 0;
+        transform: scale(0.9);
+    }
+    100% {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+        .cardx {
+            background: #edeef0;
+            color: rgb(0, 0, 0);
+            padding: 20px;
+            border-radius: 25px;
+            box-shadow: 10px 4px 10px rgba(250, 250, 250, 0.1);
+            cursor: pointer;
+            transition: transform 0.2s ease, box-shadow 0.2s ease, background 0.3s ease;
+            text-align: left;
+            border: 2px solid white;
+            animation: fadeInScaleUp 0.5s ease-out forwards; 
+        }
+
+        
+
+        .cardx:hover {
+            box-shadow: 0 8px 20px rgb(215, 162, 245);
+            background: #dbdde5;
+        }
+
+        .left1 {
+            font-weight: bold;
+            font-size: 20px;
+        }
+
+        .separator {
+            width: 1px;
+            background: #000;
+            height: 10px;
+            margin: 0 10px;
+            opacity: 0;
+        }
+
+        .right1 {
+            flex: 1;
+            font-weight:100;
+            font-size: 20px;
+            margin-left: 10px;
+        }
+
+        
+
+        .modal1 {
+            display: none;
+            /* Hidden by default */
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.5);
+            /* Semi-transparent black background */
+            justify-content: center;
+            align-items: center;
+            z-index: 1000;
+        }
+
+        .modal-content1 {
+            background-color: #fff;
+            color: #ffffff;
+            padding: 30px;
+            border-radius: 10px;
+            max-width: 500px;
+            width: 80%;
+            box-shadow: 0 4px 10px rgba(255, 255, 255, 0.1);
+            position: relative;
+            text-align: left;
+            /* Aligns content to the left */
+        }
+
+        .close-btn {
+            background-color: transparent;
+            /* Transparent background for close button */
+            color: #4b3f72;
+            /* Purple color for the close button */
+            border: none;
+            font-size: 20px;
+            cursor: pointer;
+            position: absolute;
+            top: 10px;
+            /* Positions the button at the top-right corner */
+            right: 10px;
+        }
+
+        .close-btn:hover {
+            color: #3e2c58;
+            /* Darker purple when hovered */
+        }
+
+        .modal h2 {
+            font-size: 20px;
+            margin-bottom: 10px;
+            color: #2e2e9e;            /* Black for PS1 */
+        }
+
+        .modal p {
+            font-size: 16px;
+            color: #ff4646;
+            /* Black for the description */
+        }
+
+
+
+      
+          @media (max-width: 700px) {
+            .container1 {
+                width: 100%;
+                margin: 0;
+                padding: 0 10px;
+            }
+        
+            .card1 {
+                width: 100%;
+                height: auto;
+                padding: 15px;
+                display: flex;
+                flex-direction: row; /* Ensure content remains in a row */
+                justify-content: space-between; /* Space out text and "+" icon */
+                align-items: center;
+            }
+        
+            .problem-statement1 {
+                font-size: 20px; /* Adjust font size for mobile */
+                font-weight: bold;
+                color: #2e2e9e;
+                margin: 0; /* Remove auto margins */
+                flex-grow: 1; /* Allow it to take available space */
+            }
+        
+            .problem-statement1 span {
+                color: #ff4646;
+            }
+        
+            .toggle-icon {
+                font-size: 30px; /* Adjust icon size for mobile */
+                margin: 0; /* No extra margin */
+            }
+        
+        
+          .cardx {
+              padding: 15px;
+              border-radius: 15px;
+              font-size: 16px;
+              box-shadow: none;
+              /* Simplifies shadow for cleaner mobile aesthetics */
+          }
+      
+          .cardx:hover {
+              box-shadow: 0 4px 10px rgb(200, 200, 200);
+          }
+      
+          .left1, .right1 {
+              font-size: 16px;
+              margin: 5px 0;
+          }
+      
+          .separator {
+              display: none;
+              /* Hide separator on smaller screens */
+          }
+      
+          .modal {
+              padding: 20px;
+          }
+      
+          .modal-content1 {
+              width: 90%;
+              max-width: 400px;
+              padding: 20px;
+              text-align: center;
+              /* Centers modal content on mobile */
+          }
+      
+          .modal h2 {
+              font-size: 18px;
+              margin-bottom: 15px;
+          }
+      
+          .modal p {
+              font-size: 14px;
+          }
+      
+          .close-btn {
+              font-size: 18px;
+              top: 5px;
+              right: 5px;
+          }
+      }
+      
+
+      @media (max-width: 400px) {
+        .container1 {
+            width: 100%;
+            margin: 0;
+            padding: 0 10px;
+        }
+    
+        .card1 {
+            width: 100%;
+            height: auto;
+            padding: 10px;
+            display: flex;
+            flex-direction: row; /* Keep text and icon in a row */
+            justify-content: space-between; /* Space between text and icon */
+            align-items: center;
+        }
+    
+        .problem-statement1 {
+            font-size: 18px; /* Reduce font size for smaller screens */
+            font-weight: bold;
+            color: #2e2e9e;
+            margin: 0;
+            white-space: nowrap; /* Prevent text from wrapping */
+            overflow: hidden; /* Hide overflow if text is too long */
+            text-overflow: ellipsis; /* Add ellipsis if necessary */
+            flex-grow: 1; /* Allow it to take available space */
+        }
+    
+        .problem-statement1 span {
+            color: #ff4646;
+        }
+    
+        .toggle-icon {
+            font-size: 25px; /* Adjust size for smaller screens */
+            margin: 0;
+            flex-shrink: 0; /* Prevent icon from shrinking */
+        }
+    
+        .cardx {
+            padding: 15px;
+            border-radius: 15px;
+            font-size: 16px;
+            box-shadow: none;
+            /* Simplifies shadow for cleaner mobile aesthetics */
+        }
+    
+        .cardx:hover {
+            box-shadow: 0 4px 10px rgb(200, 200, 200);
+        }
+    
+        .left1, .right1 {
+            font-size: 16px;
+            margin: 5px 0;
+        }
+    
+        .separator {
+            display: none;
+            /* Hide separator on smaller screens */
+        }
+    
+        .modal-content1 {
+            width: 90%;
+            max-width: 400px;
+            padding: 20px;
+            text-align: center;
+            /* Centers modal content on mobile */
+        }
+    
+        .modal h2 {
+            font-size: 18px;
+            margin-bottom: 15px;
+        }
+    
+        .modal p {
+            font-size: 14px;
+        }
+    
+        .close-btn {
+            font-size: 18px;
+            top: 5px;
+            right: 5px;
+        }
+    }
+
+    .ps
+    {
+      color: #2e2e9e;
+    }
+    .desc
+    {
+      color: #ff4646;
+
+    }
