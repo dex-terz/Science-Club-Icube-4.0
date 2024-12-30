@@ -2867,6 +2867,7 @@ nav .main-menu2 li a::before {
   width: inherit;
   border-radius: 50%;
 }
+
 .single-testi .img-box .quote {
   position: absolute;
   top: 0;
@@ -2890,6 +2891,17 @@ nav .main-menu2 li a::before {
   .single-testi .img-box .quote {
     left: -50px;
     font-size: 20px;
+  }
+}
+@media (max-width: 500px) {
+  .single-testi .img-box .quote {
+    left: -50px;
+    font-size: 20px;
+  }
+  .single-testi .img-box {
+    position: relative;
+    max-width: 75px;
+    margin: 0 auto 15px;
   }
 }
 .single-blog {
