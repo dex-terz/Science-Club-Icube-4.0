@@ -148,11 +148,11 @@ nav .main-menu li.has-submenu::after {
   }
 }
 nav .main-menu li a {
-  color: #221b68;
+  color: #2d019d;
   padding: 20px 0;
-  font-weight: 500;
+  font-weight: 600;
   display: inline-block;
-  font-size: 17px;
+  font-size: 19px;
   text-transform: capitalize;
 }
 @media (max-width: 991.98px) {
@@ -2683,7 +2683,7 @@ nav .main-menu2 li a::before {
 .single-testi .img-box .quote {
   position: absolute;
   top: 0;
-  left: -70px;
+  left: -50px;
   color: #fd424d;
   font-size: 50px;
 }
@@ -2695,7 +2695,7 @@ nav .main-menu2 li a::before {
 }
 @media (min-width: 1200px) and (max-width: 1367px) {
   .single-testi .img-box .quote {
-    left: -50px;
+    left: -30px;
     font-size: 40px;
   }
 }
