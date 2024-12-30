@@ -1,7 +1,38 @@
 @import "https://fonts.googleapis.com/css2?family=Oswald:wght@500;600;700&amp;family=Roboto:wght@400;500;700&amp;family=Ubuntu:wght@500;700&amp;display=swap";
 
 
+.dcontactus{
+  position: relative;
+  left: 45%;
+  padding-bottom: 15px;
+}
 
+.dcenterfooter{
+  color: #050931;
+  position: relative;
+  left: 30%;
+  display: flex;
+}
+
+
+.dleft li{
+  padding: 10px;
+  text-decoration: none;
+}
+
+
+.dright li{
+  padding: 10px;
+  text-decoration: none;
+}
+
+@media (max-width: 800px){
+
+  .dcontactus{ left: 18%; }
+
+  .dcenterfooter{flex-direction: column; left: 18%;}
+
+}
 /* Center align the text in the header */
 .header-container {
   text-align: center;
@@ -9,15 +40,25 @@
 
 /* Style for the first heading */
 .science-club {
+  font-weight: 900;
 color: #221b68;
-  font-size: 2rem;
+  font-size: 2.6rem;
   font-family: Arial, sans-serif;
 }
 
 /* Style for the event name */
 .event-name {
-color: #fd424d;
-  font-size: 2.5rem;
+  transition: all 0.5s;
+  -webkit-text-stroke: 4px #111111;
+  font-variation-settings: "wght" 900, "ital" 1;
+  text-align: center;
+  color: transparent;
+  font-family: "Meta", sans-serif;
+  text-shadow: 10px 10px 0px #000000,
+  ;
+
+    
+  font-size: 2.8rem;
   font-weight: bold;
   font-family: 'Georgia', serif;
   margin-top: 0.5rem;
@@ -25,48 +66,75 @@ color: #fd424d;
 
 /* Style for the description paragraph */
 .description {
+
 font-weight: bold;
   color: black;
-  font-size: 1.1rem;
-  font-family: 'Courier New', Courier, monospace;
+  font-size: 1.6rem;
+  font-family:'Times New Roman', Times, serif ;
   text-align: justify;
-  margin: 1rem 2rem;
+  margin: 3rem 10rem;
 }
 
 
 
-@media (max-width: 600px) {
-  .science-club {
-      font-size: 1.5rem; /* Smaller font for mobile */
-  }
-  
-  .event-name {
-      font-size: 2rem; /* Adjust event name size */
-  }
-  
-  .description {
-      font-size: 0.9rem; /* Slightly smaller text */
-      margin: 1rem; /* Reduce margin for smaller screens */
-  }
-}
-
-@media (max-width: 400px) {
+/* General styles for mobile responsiveness */
+@media screen and (max-width: 550px) {
+  /* Center align the text in the header */
   .header-container {
-      margin: 0.5rem;
+    text-align: center;
+    margin: 0 auto;
+    padding: 1rem;
   }
 
+  /* Style for the first heading */
   .science-club {
-      font-size: 1.3rem; /* Smaller font for "SVCE SCIENCE CLUB" */
-      line-height: 1.5; /* Adjust line height for better readability */
+    font-size: 2rem;
+    font-weight: 700;
   }
 
+  /* Style for the event name */
   .event-name {
-      font-size: 1.8rem; /* Adjust "ICUBE 4.0" size */
+    font-size: 2.2rem;
+    -webkit-text-stroke: 3px #111111;
+    text-shadow: 6px 6px 0px #000000;
+    margin-top: 0.3rem;
   }
 
+  /* Style for the description paragraph */
   .description {
-      font-size: 0.8rem; /* Smaller text for paragraph */
-      margin: 0.5rem; /* Reduce margins for smaller screen sizes */
+    font-size: 1.4rem;
+    margin: 2rem 5%;
+    text-align: justify;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  /* Center align the text in the header */
+  .header-container {
+    text-align: center;
+    margin: 0 auto;
+    padding: 0.8rem;
+  }
+
+  /* Style for the first heading */
+  .science-club {
+    font-size: 1.8rem;
+    font-weight: 700;
+  }
+
+  /* Style for the event name */
+  .event-name {
+    font-size: 1.8rem;
+    -webkit-text-stroke: 2px #111111;
+    text-shadow: 4px 4px 0px #000000;
+    margin-top: 0.3rem;
+  }
+
+  /* Style for the description paragraph */
+  .description {
+    font-size: 1.2rem;
+    margin: 1.5rem 5%;
+    text-align: justify;
   }
 }
 
@@ -446,6 +514,16 @@ nav .main-menu2 li a::before {
   }
 }
 .sticky-header.fixed-top {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  z-index: 100;
+  background-color: #fff;
+  -webkit-box-shadow: 0 5px 20px 0 rgba(136, 136, 136, 0.05);
+  box-shadow: 0 5px 20px 0 rgba(136, 136, 136, 0.05);
   animation: slide-down 0.7s;
   opacity: 1;
 }
