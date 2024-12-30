@@ -1,5 +1,19 @@
 @import "https://fonts.googleapis.com/css2?family=Oswald:wght@500;600;700&amp;family=Roboto:wght@400;500;700&amp;family=Ubuntu:wght@500;700&amp;display=swap";
 
+.logoz {
+  width: 100%; /* Make the image responsive */
+  max-width: 400px; /* Limit the maximum size */
+  height: auto; /* Maintain the aspect ratio */
+  display: block; /* Center the image */
+  margin: 0 auto; /* Center horizontally */
+}
+
+/* Mobile view adjustments */
+@media (max-width: 768px) {
+  .logoz {
+    max-width: 250px; /* Smaller max width for mobile */
+  }
+}
 
 .dcontactus{
   position: relative;
@@ -42,8 +56,10 @@
 .science-club {
   font-weight: 900;
 color: #221b68;
-  font-size: 2.6rem;
-  font-family: Arial, sans-serif;
+-webkit-text-stroke: 1px #e7e6e6;
+
+  font-size: 3.2rem;
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
 }
 
 /* Style for the event name */
@@ -64,6 +80,28 @@ color: #221b68;
   margin-top: 0.5rem;
 }
 
+
+/* Mobile view adjustments */
+@media (max-width: 768px) {
+  .event-name {
+    transition: all 0.5s;
+    -webkit-text-stroke: 3px #111111;
+    font-variation-settings: "wght" 900, "ital" 1;
+    text-align: center;
+    color: transparent;
+    font-family: "Meta", sans-serif;
+    text-shadow: 8px 8px 0px #000000,
+    ;
+  
+      
+    font-size: 2.2rem;
+    font-weight: bold;
+    font-family: 'Georgia', serif;
+    margin-top: 0.5rem;
+  }
+}
+
+
 /* Style for the description paragraph */
 .description {
 
@@ -74,7 +112,6 @@ font-weight: bold;
   text-align: justify;
   margin: 3rem 10rem;
 }
-
 
 
 /* General styles for mobile responsiveness */
@@ -93,12 +130,12 @@ font-weight: bold;
   }
 
   /* Style for the event name */
-  .event-name {
+  /* .event-name {
     font-size: 2.2rem;
     -webkit-text-stroke: 3px #111111;
     text-shadow: 6px 6px 0px #000000;
     margin-top: 0.3rem;
-  }
+  } */
 
   /* Style for the description paragraph */
   .description {
@@ -123,12 +160,12 @@ font-weight: bold;
   }
 
   /* Style for the event name */
-  .event-name {
+  /* .event-name {
     font-size: 1.8rem;
     -webkit-text-stroke: 2px #111111;
     text-shadow: 4px 4px 0px #000000;
     margin-top: 0.3rem;
-  }
+  } */
 
   /* Style for the description paragraph */
   .description {
