@@ -56,7 +56,7 @@
 .science-club {
   font-weight: 900;
 color: #221b68;
--webkit-text-stroke: 1px #e7e6e6;
+/* -webkit-text-stroke: 1px #e7e6e6; */
 
   font-size: 3.2rem;
   font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
@@ -329,7 +329,7 @@ nav .main-menu li a {
   padding: 10px 0;
   font-weight: 600;
   display: inline-block;
-  font-size: 15px;
+  font-size: 18px;
   text-transform: capitalize;
 }
 @media (max-width: 991.98px) {

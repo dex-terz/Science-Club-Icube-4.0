@@ -10,12 +10,12 @@ function toggleList() {
 
 // Array of problem statements
 const problemStatements = [
-  { id: 1, title: "PS 1", description: "Switching from heavy fuel oil to a suitable fuel..." },
-  { id: 2, title: "PS 2", description: "Drone-based surveillance system for vessels..." },
-  { id: 3, title: "PS 3", description: "Removal/Reduction of stickiness in spray drying..." },
-  { id: 4, title: "PS 4", description: "IoT-enabled Android application for parking space..." },
+  { id: 1, title: "PS 1", description: "Switching from heavy fuel oil to a suitable fuel..." ,descp:"aaaaa"},
+  { id: 2, title: "PS 2", description: "Drone-based surveillance system for vessels..." ,descp:"aaaaa"},
+  { id: 3, title: "PS 3", description: "Removal/Reduction of stickiness in spray drying...",descp:"aaaaa" },
+  { id: 4, title: "PS 4", description: "IoT-enabled Android application for parking space...",descp:"aaaaa" },
 
-  { id: 5, title: "PS 1", description: "Switching from heavy fuel oil to a suitable fuel..." },
+  { id: 5, title: "PS 1", description: "Switching from heavy fuel oil to a suitable fuel...",descp:"aaaaa" },
   { id: 6, title: "PS 1", description: "Switching from heavy fuel oil to a suitable fuel..." },
   { id: 7, title: "PS 2", description: "Drone-based surveillance system for vessels..." },
   { id: 8, title: "PS 3", description: "Removal/Reduction of stickiness in spray drying..." },
