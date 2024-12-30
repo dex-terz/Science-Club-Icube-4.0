@@ -1,5 +1,77 @@
 @import "https://fonts.googleapis.com/css2?family=Oswald:wght@500;600;700&amp;family=Roboto:wght@400;500;700&amp;family=Ubuntu:wght@500;700&amp;display=swap";
 
+
+
+/* Center align the text in the header */
+.header-container {
+  text-align: center;
+}
+
+/* Style for the first heading */
+.science-club {
+color: #221b68;
+  font-size: 2rem;
+  font-family: Arial, sans-serif;
+}
+
+/* Style for the event name */
+.event-name {
+color: #fd424d;
+  font-size: 2.5rem;
+  font-weight: bold;
+  font-family: 'Georgia', serif;
+  margin-top: 0.5rem;
+}
+
+/* Style for the description paragraph */
+.description {
+font-weight: bold;
+  color: black;
+  font-size: 1.1rem;
+  font-family: 'Courier New', Courier, monospace;
+  text-align: justify;
+  margin: 1rem 2rem;
+}
+
+
+
+@media (max-width: 600px) {
+  .science-club {
+      font-size: 1.5rem; /* Smaller font for mobile */
+  }
+  
+  .event-name {
+      font-size: 2rem; /* Adjust event name size */
+  }
+  
+  .description {
+      font-size: 0.9rem; /* Slightly smaller text */
+      margin: 1rem; /* Reduce margin for smaller screens */
+  }
+}
+
+@media (max-width: 400px) {
+  .header-container {
+      margin: 0.5rem;
+  }
+
+  .science-club {
+      font-size: 1.3rem; /* Smaller font for "SVCE SCIENCE CLUB" */
+      line-height: 1.5; /* Adjust line height for better readability */
+  }
+
+  .event-name {
+      font-size: 1.8rem; /* Adjust "ICUBE 4.0" size */
+  }
+
+  .description {
+      font-size: 0.8rem; /* Smaller text for paragraph */
+      margin: 0.5rem; /* Reduce margins for smaller screen sizes */
+  }
+}
+
+
+
 html,
 body {
   width: 100%;
