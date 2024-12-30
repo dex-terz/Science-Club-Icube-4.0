@@ -2872,7 +2872,7 @@ nav .main-menu2 li a::before {
   top: 0;
   left: -50px;
   color: #fd424d;
-  font-size: 50px;
+  font-size: 30px;
 }
 .single-testi .cont-box {
   text-align: center;
@@ -2883,13 +2883,13 @@ nav .main-menu2 li a::before {
 @media (min-width: 1200px) and (max-width: 1367px) {
   .single-testi .img-box .quote {
     left: -30px;
-    font-size: 40px;
+    font-size: 20px;
   }
 }
 @media (min-width: 992px) and (max-width: 1198.98px) {
   .single-testi .img-box .quote {
     left: -50px;
-    font-size: 40px;
+    font-size: 20px;
   }
 }
 .single-blog {
