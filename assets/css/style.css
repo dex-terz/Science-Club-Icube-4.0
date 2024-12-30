@@ -289,10 +289,10 @@ nav .main-menu li.has-submenu::after {
 }
 nav .main-menu li a {
   color: #2d019d;
-  padding: 20px 0;
+  padding: 10px 0;
   font-weight: 600;
   display: inline-block;
-  font-size: 19px;
+  font-size: 15px;
   text-transform: capitalize;
 }
 @media (max-width: 991.98px) {
