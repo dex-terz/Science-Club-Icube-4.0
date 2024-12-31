@@ -660,6 +660,7 @@ nav .main-menu2 li a::before {
     transform: translateY(0);
   }
 }
+
 .footer-area .foo_top {
   position: relative;
   overflow: hidden;
@@ -745,11 +746,22 @@ nav .main-menu2 li a::before {
   border-radius: 10px;
 }
 .footer-area .foo_btm {
+  
+  position: fixed; /* Sticks the footer to the bottom of the viewport */
+  bottom: 0; /* Aligns to the bottom edge */
+  left: 0; /* Aligns to the left edge */
+  width: 100%; /* Spans the full width of the viewport */
+  background-color: #121861; /* A subtle dark background color */
+  color: #ffffff; /* White text for contrast */
+  padding: 10px 0; /* Adds spacing around the text */
+  text-align: center; /* Centers the content */
+  font-size: 14px; /* Ensures readability */
+  z-index: 1000; /* Ensures the footer is on top of other elements */
+  box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.2); /* Adds a shadow for better visual separation */
   background: -webkit-linear-gradient(293deg, #e100ff 0%, rgba(127, 0, 255, 0.99608) 100%);
   background: -o-linear-gradient(293deg, #e100ff 0%, rgba(127, 0, 255, 0.99608) 100%);
   background: linear-gradient(157deg, #e100ff 0%, rgba(127, 0, 255, 0.99608) 100%);
-  position: relative;
-  padding: 10px 0;
+  
 }
 .footer-area .foo_btm .copyright-text {
   text-align: center;
