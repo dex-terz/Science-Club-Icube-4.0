@@ -621,7 +621,7 @@ nav .main-menu2 li a::before {
 }
 @media (max-width: 991px) {
   .header-area .header-bottom .logo {
-    width: 120px;
+    width: 130px;
   }
   .header-area .header-bottom {
     padding: 20px 0;
