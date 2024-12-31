@@ -1181,7 +1181,7 @@ nav .main-menu2 li a::before {
         align-items: center;
         justify-content: center;
         margin-top: 15px;
-        margin-left: 20px;
+        margin-left: 10px;
     }
     .corner-container{
         display: flex;
