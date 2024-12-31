@@ -624,6 +624,8 @@ nav .main-menu2 li a::before {
     width: 200px;
   }
   .header-area .header-bottom {
+    width: 120px;
+
     padding: 20px 0;
   }
 }
