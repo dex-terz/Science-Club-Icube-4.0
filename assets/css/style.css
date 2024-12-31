@@ -621,10 +621,10 @@ nav .main-menu2 li a::before {
 }
 @media (max-width: 991px) {
   .header-area .header-bottom .logo {
-    width: 200px;
+    width: 150px;
   }
   .header-area .header-bottom {
-    width: 120px;
+    width: 180px;
 
     padding: 20px 0;
   }
