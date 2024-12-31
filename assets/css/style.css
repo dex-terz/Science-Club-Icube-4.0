@@ -747,7 +747,7 @@ nav .main-menu2 li a::before {
 }
 .footer-area .foo_btm {
   
-  position: fixed; /* Sticks the footer to the bottom of the viewport */
+  position: absolute; /* Sticks the footer to the bottom of the viewport */
   bottom: 0; /* Aligns to the bottom edge */
   left: 0; /* Aligns to the left edge */
   width: 100%; /* Spans the full width of the viewport */
