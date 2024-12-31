@@ -160,7 +160,7 @@ function toggleList() {
       problemStatements.forEach(ps => {
           const card = document.createElement("div");
           card.className = "cardx";
-          card.innerHTML = `<h4 onclick="showModal(${ps.id})">${ps.title}</h4>`;
+          card.innerHTML = `<div class="pss" onclick="showModal(${ps.id})">${ps.title}</div>`;
           cardContainer.appendChild(card);
       });
   } else {
