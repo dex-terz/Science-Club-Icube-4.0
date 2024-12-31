@@ -54,29 +54,57 @@
   }
 }
 
-.dcontactus{
-  position: relative;
-  left: 45%;
-  padding-bottom: 15px;
-}
-
-.dcenterfooter{
-  color: #050931;
-  position: relative;
-  left: 30%;
+.dcenterfooter {
   display: flex;
+  justify-content: space-between; /* Space between the two columns */
+  align-items: flex-start; /* Align items at the top */
+  padding: 20px; /* Add spacing around the section */
+  max-width: 1200px; /* Limit the width for a centered look */
+  margin: 0 auto; /* Center the section horizontally */
+  flex-wrap: wrap; /* Allow wrapping for smaller screens */
+  background-color: #f9f9f9; /* Light background color for contrast */
+  border-radius: 10px; /* Add rounded corners */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for better visuals */
 }
 
-
-.dleft li{
-  padding: 10px;
-  text-decoration: none;
+.dleft, .dright {
+  flex: 1; /* Ensure equal space for both columns */
+  min-width: 300px; /* Ensure columns don’t shrink too much */
+  padding: 50px; /* Add spacing inside each column */
 }
 
+.dleft ul, .dright ul {
+  list-style: none; /* Remove default bullet points */
+  padding: 0;
+}
 
-.dright li{
-  padding: 10px;
-  text-decoration: none;
+.dleft div, .dright div {
+  margin-bottom: 15px; /* Add spacing between items */
+  font-size: 16px; /* Increase font size for readability */
+  line-height: 1.6; /* Improve text spacing */
+  display: flex;
+  align-items: center; /* Align icons and text vertically */
+}
+
+.dleft span, .dright span {
+  margin-right: 10px; /* Add spacing between icon and text */
+  font-size: 20px; /* Make icons slightly larger */
+}
+
+.dleft a, .dright a {
+  text-decoration: none; /* Remove underline from links */
+  font-weight: bold; /* Highlight links */
+}
+
+@media (max-width: 768px) {
+  .dcenterfooter {
+      flex-direction: column; /* Stack columns on smaller screens */
+      text-align: center; /* Center text for smaller screens */
+  }
+
+  .dleft, .dright {
+      padding: 10px 0; /* Adjust padding for smaller screens */
+  }
 }
 
 @media (max-width: 800px){
