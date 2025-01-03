@@ -28,12 +28,7 @@
   }
 }
 
-@media (max-width: 600px) {
-  .marquee p {
-    font-size: 18px; /* Smaller font size for mobile screens */
-    padding: 5px 0;  /* Adjust padding if necessary */
-  }
-}
+
 .cardx {
   border: 1px solid #ccc;
   padding: 10px;
