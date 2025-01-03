@@ -134,6 +134,10 @@
   .dleft, .dright {
       padding: 10px 0; /* Adjust padding for smaller screens */
   }
+  .dleft div,.dright div
+  {
+    font-size:13px;
+  }
 }
 
 @media (max-width: 800px){
