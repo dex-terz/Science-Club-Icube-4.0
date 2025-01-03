@@ -14,7 +14,7 @@
   animation: marquee 10s linear infinite;
   font-size: 24px;
   font-weight: bold;
-  color: #333;
+  color:#221b68;
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
@@ -25,6 +25,13 @@
   }
   100% {
     transform: translateX(-100%);
+  }
+}
+
+@media (max-width: 600px) {
+  .marquee p {
+    font-size: 18px; /* Smaller font size for mobile screens */
+    padding: 5px 0;  /* Adjust padding if necessary */
   }
 }
 .cardx {
