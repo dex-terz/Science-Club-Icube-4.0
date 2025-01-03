@@ -1,5 +1,31 @@
 @import "https://fonts.googleapis.com/css2?family=Oswald:wght@500;600;700&amp;family=Roboto:wght@400;500;700&amp;family=Ubuntu:wght@500;700&amp;display=swap";
+.marquee {
+  width: 100%;
+  overflow: hidden;
+  white-space: nowrap;
+  background-color: #f0f0f0;
+  padding: 10px 0;
+  box-sizing: border-box;
+}
 
+/* Marquee text */
+.marquee p {
+  display: inline-block;
+  animation: marquee 10s linear infinite;
+  font-size: 24px;
+  font-weight: bold;
+  color: #333;
+}
+
+/* Keyframes for marquee animation */
+@keyframes marquee {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
 .cardx {
   border: 1px solid #ccc;
   padding: 10px;
