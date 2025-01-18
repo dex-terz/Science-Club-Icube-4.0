@@ -1,4 +1,49 @@
 @import "https://fonts.googleapis.com/css2?family=Oswald:wght@500;600;700&amp;family=Roboto:wght@400;500;700&amp;family=Ubuntu:wght@500;700&amp;display=swap";
+.sponz-title {
+  font-family: 'Oswald', sans-serif; /* Use Google Fonts or system fonts as alternatives */
+  font-weight: bold;
+  font-size: 1.8rem; /* Adjust as needed */
+  color: #221b68; /* White color for text */
+  text-transform: uppercase;
+  letter-spacing: 2px; /* Adds some spacing between letters for impact */
+  text-align: center;
+}
+.sponz-title span{
+  font-family: 'Oswald', sans-serif; /* Use Google Fonts or system fonts as alternatives */
+  font-weight: bold;
+  font-size: 1.8rem; /* Adjust as needed */
+  color: #FD424D; /* White color for text */
+  text-transform: uppercase;
+  letter-spacing: 2px; /* Adds some spacing between letters for impact */
+  text-align: center;
+}
+.sponz {
+  text-align: center; /* Center the text horizontally */
+  font-family: 'Poppins', sans-serif; /* Attractive and clean font */
+  font-size: 1rem; /* Adjust the font size */
+  font-weight: bold; /* Make the text bold */
+  color: #f9082c; /* Vibrant pink-red color for text */
+  margin-top: 10px; /* Add some spacing from the top */
+  text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.2); /* Add a soft shadow for effect */
+}
+
+@media (max-width: 448px) {
+  .sponz-title {
+    font-size: 1.5rem; /* Reduce title size for smaller screens */
+    letter-spacing: 1.5px; /* Adjust spacing for better readability */
+  }
+
+  .sponz-title span {
+    font-size: 1.5rem; /* Match the main title size */
+  }
+
+  .sponz
+   {
+    font-size: 0.9rem; /* Reduce text size for mobile */
+    margin-top: 8px; /* Adjust spacing */
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.15); /* Soften the shadow for mobile */
+  }
+}
 .marquee {
   width: 100%;
   overflow: hidden;
@@ -3123,6 +3168,11 @@ nav .main-menu2 li a::before {
   padding: 20px;
   -webkit-box-shadow: 0 20px 30px 0 rgba(135, 135, 135, 0.1);
   box-shadow: 0 20px 30px 0 rgba(135, 135, 135, 0.1);
+}
+
+.brand-area .single-brand:hover {
+  transform: scale(1.05); /* Slight bulge effect */
+  box-shadow: 0 25px 35px 0 rgba(135, 135, 135, 0.2); /* Slightly intensified shadow */
 }
 .brand-area .single-brand img {
   width: 100%;
